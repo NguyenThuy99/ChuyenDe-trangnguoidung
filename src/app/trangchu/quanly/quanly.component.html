@@ -1,0 +1,121 @@
+<div id="wapper" style="background: #e43f0e73">
+    <div class="row" style=" margin: 0px 5.5%;
+    padding: 50px 10% 0 10%;">
+
+        <p style="text-align: center;padding-bottom:10px;color:white;font-weight: bold;font-size: 30px;
+    font-family: initial;margin-bottom: 50px;">HỆ THỐNG QUẢN LÝ GIÁO DỤC MẦM NON</p>
+        <div class="col-sm-8" style="padding:10px">
+            <div id="thongbao" style="border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 15px;
+            background: rgba(0, 141, 83, 1);
+            text-align: center;
+            color: white;">
+                <h3 style="text-align: center;
+                BORDER-BOTTOM: 1PX SOLID #DDD;font-weight: 300;
+    color:white">THÔNG BÁO</h3>
+                <ul style="overflow: auto; height: 300px;padding: 10px;padding: 0;text-align: center;
+                color: white;font-family: arial, helvetica, sans-serif;">
+                    <li style="border-bottom: 1px solid #ddd;
+                                            padding: 5px 0;
+                                            text-align: justify;">
+                        <h5><strong style="color: white;">07/03/2019</strong></h5>
+                        <p>CHÚC MỪNG NGÀY PHỤ NỮ 8/3
+                            Nhân ngày 8/3, CNCVN xin gửi lời chúc tốt đẹp nhất tới các Cô giáo. Chúc các Cô có một ngày
+                            thật đặc biệt và ý nghĩa!
+                            Trân trọng cảm ơn!</p>
+                    </li>
+                    <li style="border-bottom: 1px solid #ddd;
+                                            padding: 5px 0;
+                                            text-align: justify;">
+                        <h5><strong style="color: white;">01/02/2019</strong></h5>
+                        <p>THÔNG BÁO V/V NGHỈ TẾT NGUYÊN ĐÁN KỶ HỢI 2019
+                            Kính gửi Quý khách hàng,
+                            Công ty CPPT Công nghệ cao Việt Nam trân trọng thông báo đến Quý khách hàng thời gian nghỉ
+                            Tết Nguyên đán 2019 như sau:
+                            Thời gian nghỉ: Từ ngày 02/02/2019
+                            Thời gian làm việc trở lại: Thứ 6 – ngày 15/02/2019
+                            Kính chúc Quý khách hàng có một năm mới An khang thịnh vượng – Vạn sự như ý!
+                            Trân trọng!</p>
+                    </li>
+                    <li style="border-bottom: 1px solid #ddd;
+                                            padding: 5px 0;
+                                            text-align: justify;">
+                        <h5><strong style="color: white;">18/02/2019</strong></h5>
+                        <p>THÔNG BÁO V/V THAY ĐỔI GIỜ LÀM VIỆC
+                            Kính gửi Quý khách hàng,
+                            Công ty CPPT Công nghệ cao Việt Nam trân trọng thông báo tới Quý khách hàng về việc thay đổi
+                            giờ làm việc như sau:
+                            Thời gian làm việc mới:
+                            - Sáng từ 8h đến 12h
+                            - Chiều từ 13h đến 17h
+                            Thời gian áp dụng từ ngày Thứ 2 - 18/02/2019
+                            Trân trọng thông báo!</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                var size = $('#thongbao ul').height();
+                if (size > 300) {
+                    $('#thongbao ul').css('overflow', 'auto');
+                    $('#thongbao ul').css('height', '300');
+                }
+            })
+        </script>
+        <div class="col-sm-4" style="padding:10px;">
+            <div id="Form-login" style="border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 15px;
+            background: rgba(0, 141, 83, 1);
+            text-align: center;
+            color: white;">
+                <div class="login-block" style="text-align: center;">
+                    <form role="form" id="loginForm" method="post" action="" style="text-align: center">
+                        <h1 style="color: #ffffff;font-size: 30px;">Đăng nhập</h1>
+                        <label for="username">Tên đăng nhập:</label>
+                        <input type="text" value="" placeholder="" id="username" name="username" 
+                        style="background: rgba(255, 255, 255, 0) url(http://i.imgur.com/u0XmBmv.png) 20px top no-repeat;
+                        background-size: 16px 80px;
+                        background-color: white;
+                        width: 100%;height: 42px;
+                        box-sizing: border-box;
+                        border-radius: 5px !important;
+                        border: 1px solid #ccc;
+                        margin-bottom: 20px;
+                        font-size: 14px;
+                        padding: 0 20px 0 50px;
+                        outline: none;">
+                        <label for="username">Mật khẩu:</label>
+                        <input type="password" value="" placeholder="" id="password" name="password" style="background: rgba(255, 255, 255, 0) url(http://i.imgur.com/u0XmBmv.png) 20px top no-repeat;
+                        background-size: 16px 80px;
+                        background-color: white;
+                        width: 100%;height: 42px;
+                        box-sizing: border-box;
+                        border-radius: 5px !important;
+                        border: 1px solid #ccc;
+                        margin-bottom: 20px;
+                        font-size: 14px;
+                        padding: 0 20px 0 50px;
+                        outline: none;">
+                        
+                        <script>
+                            $(function () {
+                                $('#donvi').select2();
+                            });
+                        </script>
+
+                        <div style="margin-top:5px">
+                            <button type="button" id="login">Đăng nhập</button>
+                        </div>
+                        <div id="message" style="color: firebrick">Hệ thống đang bảo trì!Quý khách vui lòng quay lại
+                            sau!</div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
