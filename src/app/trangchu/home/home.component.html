@@ -3,19 +3,22 @@
 
     <div class="site-section bg-light">
         <div class="container">
+        
+            
           <div class="row">
             <div class="col-md-6 mb-5 mb-md-0">
               <img src="assets/images/truong.jpg" alt="Image" class="img-fluid">
             </div>
             <div class="col-md-5 ml-auto pl-md-5">
-              <h3 class="text-black">Trường mầm non HOA MAI</h3>
-              <p><span>Trường Mầm non Đại Đồng được thành lập năm 1990 từ việc sáp nhập Nhà trẻ xã Đại Đồng với trường Mẫu giáo dân lập xã Đại Đồng vào năm học 1989-1990.
-                Đến năm 2005 được UBND huyện Đại Lộc ra Quyết định chuyển đổi loại hình trường từ hệ bán công sang công lập theo Quyết định số 26/QĐ-UBND, ngày 16 tháng 11 năm 2005 với tên gọi Trường Mầm non Đại Đồng.  
+           
+              <h3 class="text-black">{{new.tieude}}</h3>
+              <p><span>{{new.mota}}
               </span></p>
   
               <p class="mt-5"><a href="#" class="btn btn-warning py-4 btn-custom-1">More About Us</a></p>
             </div>
           </div>
+        
         </div>
       </div>
       
@@ -29,30 +32,16 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4 mb-4 mb-lg-0">
+            <ng-container *ngFor="let tin of list_item">
+            <div class="col-lg-4 mb-4 mb-lg-0" >
               <div class="package text-center bg-white">
                 <span class="img-wrap"><img src="assets/images/flaticon/svg/001-jigsaw.svg" alt="Image" class="img-fluid"></span>
-                <h3 class="text-teal">Chương trình nhà trường</h3>
+                <h3 class="text-teal">{{tin.tieude}}</h3>
                 <p>Nhằm nâng cao chất lượng chăm sóc giáo dục trẻ và thống nhất với các bậc phụ huynh về các hoạt động của trẻ . Ngày 21/9/2020 Trường Mầm Non Thụy Phương tổ chức hội nghị họp ban đại diện cha mẹ học sinh năm học 2020-2021</p>
-                <p><a href="#" class="btn btn-primary btn-custom-1 mt-4">Learn More</a></p>
+                <p><a routerLink="/tintuc" class="btn btn-primary btn-custom-1 mt-4">Learn More</a></p>
               </div>
             </div>
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <div class="package text-center bg-white">
-                <span class="img-wrap"><img src="assets/images/flaticon/svg/002-target.svg" alt="Image" class="img-fluid"></span>
-                <h3 class="text-success">Tin tức giáo dục mầm non</h3>
-                <p>Năm học mới 2020-2021 đã đến rồi, một năm học hứa hẹn với bao điều ước trở thành hiện thực. Trong công việc tất bật, tôi luôn mong muốn tìm một niềm vui nho nhỏ, mong nhìn các con yêu nở trên môi những nụ cười thật rạng rỡ.</p>
-                <p><a href="#" class="btn btn-warning btn-custom-1 mt-4">Learn More</a></p>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <div class="package text-center bg-white">
-                <span class="img-wrap"><img src="assets/images/flaticon/svg/003-mission.svg" alt="Image" class="img-fluid"></span>
-                <h3 class="text-danger">Thư viện thiết bị</h3>
-                <p>Dinh dưỡng là một trong những yếu tố ảnh hưởng đến sự phát triển thể chất, khả năng đề kháng miễn dịch của trẻ em. Mỗi giai đoạn khác nhau, đều có những yêu cầu khác nhau về dinh dưỡng; do đó dinh dưỡng là vô cùng cần thiết.</p>
-                <p><a href="#" class="btn btn-success btn-custom-1 mt-4">Learn More</a></p>
-              </div>
-            </div>
+          </ng-container>
           </div>
         </div>
       </div>
