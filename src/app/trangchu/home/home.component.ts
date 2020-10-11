@@ -11,20 +11,16 @@ import { BaseComponent } from 'src/app/lib/base.component';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent extends BaseComponent implements OnInit {
-  list_item:any;
-  new :any;
+  loaitin:any;
   constructor(injector: Injector) { 
     super(injector);
   }
 
   ngOnInit(): void {
     Observable.combineLatest(
-      this._api.get('api/TinTuc/get-all'),
+      this._api.get('api/loaitin/get-all-loai'),
     ).takeUntil(this.unsubscribe).subscribe(res => {
-      this.list_item = res[0];
-      this.new = res[0][5];
-      console.log(this.list_item);
-      console.log(this.new);
+      this.loaitin= res[0];
       setTimeout(() => {
         this.loadScripts();
       });
