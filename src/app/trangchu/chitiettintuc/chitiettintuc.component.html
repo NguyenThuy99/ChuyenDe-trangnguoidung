@@ -79,45 +79,74 @@ margin-bottom: 50px;">
                 <div class="chu_de">
                     <div class="top_chude container-fluid text-left" id="vitri_hienthi"
                         style="background-color: rgb(255, 138, 21); height: 43px;">
-                        <a class="ten_chu_de" href="javascript:void();" style="color: rgb(128, 0, 64);">Thực đơn nhà
-                            trường</a>
+                        <a class="ten_chu_de" href="index.php?chucnang=view_chude&amp;chudecode=50"
+                            style="color: rgb(128, 0, 64);">Chương trình nhà trường</a>
                     </div>
-                    <div class="body_chude" style="padding-left: 20px;
-                    /* margin-left: 5px; */
-                    background-color: rgb(255, 255, 166);
-                    padding-top: 10px;">
+                    <div class="body_chude" style="background-color: rgb(255, 255, 166); height: ;">
 
-                        <div class="" *ngFor="let tin of tintuc">
-                            <div class="bai_viet_1">
-                                <a [routerLink]="['/chitiettintuc',tin.id]">
-                                    <img class="anh_title" src="assets/images/{{tin.hinhanh}}" alt="" title=""
-                                        style="height: 100px; width: 100px;">
-                                    <h4 class="tieu_de_bai_viet padding-top" style="margin: 0;
-                                    padding: 0;
-                                    font-size: 14px;
-                                    font-weight: bold;">{{tin.tieude}}<small></small></h4>
-                                   
+                        <div class="">
+                            <div class="bai_viet_1" style="padding-left: 10px;">
+                                <a href="#"><img class="anh_title" src="anh_upload/2020_09_25_09_49_128850.jpg" alt=""
+                                        title="">
+                                    <h3 class="tieu_de_bai_viet">{{item.tieude}}<small></small></h3>
                                 </a>
-                                <div class="tomtat_baiviet">{{tin.mota}}}</div>
-                            </div>
+                                <div class="tomtat_baiviet">Ngày 22 tháng 9 năm 2020 tại hội trường UBND quận Bắc Từ
+                                    Liêm, Hội Chữ thập đỏ quận Bắc Từ Liêm tổ chức hội nghị tổng kết công tác Chữ thập
+                                    đỏ trường học, năm học 2019 - 2020 và phương hướng nhiệm vụ năm học 2020 - 2021; Tập
+                                    huấn kỹ năng, nhiệm vụ công tác Chữ thập đỏ trường học. </div>
+                                <div class="clearfix fix-width-table" style="">
+                                    <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span
+                                            style="font-size:12pt"><span
+                                                style="font-family:&quot;Times New Roman&quot;,serif"><span
+                                                    style="font-size:14.0pt"><span style="color:#222222"><span
+                                                            style="background-color:null">Ngày 22 tháng 9 năm 2020 tại
+                                                            hội trường UBND quận Bắc Từ Liêm, Hội Chữ thập đỏ quận Bắc
+                                                            Từ Liêm tổ chức hội nghị tổng kết công tác Chữ thập đỏ
+                                                            trường học, năm học 2019 - 2020 và phương hướng nhiệm vụ năm
+                                                            học 2020 - 2021; Tập huấn kỹ năng, nhiệm vụ công tác Chữ
+                                                            thập đỏ trường học. Về hội nghị có bà Trần Thu Hằng - ủy
+                                                            viên Ban Thường vụ, Trưởng ban Truyền thông và Phát triển
+                                                            Tình nguyện viên Trung ương Hội Chữ thập đỏ Việt Nam; bà
+                                                            Đinh Thị Phức - Phó Chủ tịch Hội Chữ thập đỏ thành phố Hà
+                                                            Nội; đại diện lãnh đạo các phòng, ban của quận và đặc biệt
+                                                            là sự có mặt của đại diện lãnh đạo Ban Giám hiệu các trường
+                                                            thuộc địa bàn quận. </span></span></span></span></span></p>
 
-                        </div>
-                        <div class="row padding-top">
-                            <div class="col-xs-12">
-                                <ul class="pull-right pagination" id="pagingcontrols">
-                                    <li class="disabled"><a href="#" aria-label="Older"><span
-                                                aria-hidden="true"></span>«</a></li>
-                                    <li class="active"><a
-                                            href="index.php?chucnang=view_chude&amp;chudecode=50&amp;ht=5&amp;p=1#vitri_hienthi"
-                                            title="Trang 1">1</a></li>
-                                    <li><a href="index.php?chucnang=view_chude&amp;chudecode=50&amp;ht=5&amp;p=2#vitri_hienthi"
-                                            title="Trang 2">2</a></li>
-                                    <li><a href="index.php?chucnang=view_chude&amp;chudecode=50&amp;ht=5&amp;p=3#vitri_hienthi"
-                                            title="Trang 3">3</a></li>
-                                    <li><a href="index.php?chucnang=view_chude&amp;chudecode=50&amp;ht=5&amp;p=11#vitri_hienthi"
-                                            title="Trang cuối" aria-label="Older"><span aria-hidden="true"></span>»</a>
-                                    </li>
-                                </ul>
+                                    <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span
+                                            style="font-size:12pt"><span
+                                                style="font-family:&quot;Times New Roman&quot;,serif"><span
+                                                    style="font-size:14.0pt"><span style="color:#222222"><span
+                                                            style="background-color:null">Tại Hội nghị, trường Mầm non
+                                                            Thụy Phương được vinh dự biểu dương có thành tích xuất sắc
+                                                            trong công tác Y tế chữ thập đỏ năm học 2019-2020; nhân viên
+                                                            y tế Ngô Thu Nga được khen thưởng thành tích trong phong
+                                                            trào công tác chữ thập đỏ học đường năm học
+                                                            2019-2020</span></span></span></span></span></p>
+
+                                    <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><img
+                                            src="/ckfinder/userfiles/images/image-20200925094736-1.jpeg"
+                                            style="width:100%"></p>
+
+                                    <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><img
+                                            src="/ckfinder/userfiles/images/image-20200925094821-2.jpeg"
+                                            style="width:100%"></p>
+
+                                    <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><img
+                                            src="/ckfinder/userfiles/images/image-20200925094849-3.jpeg"
+                                            style="width:100%"></p>
+
+                                    <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><img
+                                            src="/ckfinder/userfiles/images/image-20200925094917-4.jpeg"
+                                            style="width:100%"></p>
+
+                                    <p style="margin-left:0cm; margin-right:0cm; text-align:justify">&nbsp;</p>
+
+                                </div>
+                                <div class="clearfix">
+                                    <div class="fb-comments"
+                                        data-href="http://mamnonthuyphuong.pgdbactuliem.edu.vn/index.php?chucnang=view_chitiet&amp;chudecode=50&amp;baivietcode=232591"
+                                        data-numposts="10" data-width="100%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

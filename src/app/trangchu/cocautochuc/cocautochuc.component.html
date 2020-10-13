@@ -1,117 +1,182 @@
+<article class="" style="position:relative ;margin-top: 50px;
+margin-bottom: 50px;">
+  <div id="background_article" class="background-article"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-md-push-9" style="margin-top: -34px">
+        <div class="row khoi_phai">
+          <nav class="navbar navbar-collapse navbar-default">
+            <div class="navbar-header pull-right">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1"
+                aria-expanded="true" aria-controls="navbar">
 
-<div class="site-section bg-info">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-12 text-center">
-          <span class="text-cursive h5 text-red d-block">Packages You Like</span>
-          <h2 class="text-white">Our Packages</h2>
+              </button>
+            </div>
+            <div class="clearfix visible-xs"></div>
+            <div id="navbar1" class="collapse navbar-collapse navbar-default navbar-right collapse show">
+              <div class="list-group chu_de">
+                <div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
+                  <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Văn bản hành chính</p>
+                </div><a href="index.php?chucnang=view_lichcongtac" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Lịch công tác</a><a
+                  href="index.php?chucnang=view_vanbanphapquy" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Văn bản pháp quy</a><a
+                  href="index.php?chucnang=view_congvanchidao" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Công văn chỉ đạo</a><a
+                  href="index.php?chucnang=view_giaymoi" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Giấy mời</a><a
+                  href="index.php?chucnang=view_thongtin3congkhai" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Thông tin 3 công khai</a>
+              </div>
+              <div class="list-group chu_de">
+                <div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
+                  <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Chia sẻ - trao đổi</p>
+                </div><a href="index.php?chucnang=view_baigiangdientu" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Bài giảng điện tử</a><a
+                  href="index.php?chucnang=view_traodoikinhnghiem" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Trao đổi kinh nghiệm</a><a
+                  href="index.php?chucnang=view_traodoitructuyen" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Trao đổi trực tuyên</a>
+              </div>
+              <div class="list-group chu_de">
+                <div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
+                  <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Nhà trường - phụ huynh</p>
+                </div><a href="index.php?chucnang=view_thucdon" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Thực đơn của bé</a><a
+                  href="index.php?chucnang=view_hoidap" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Hỏi đáp</a><a
+                  href="index.php?chucnang=view_tiepthu_ykien" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Ý kiến đóng góp</a><a
+                  href="index.php?chucnang=view_tracuudiemhocsinh" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Tra cứu điểm học sinh</a><a
+                  href="index.php?chucnang=view_thoikhoabieuhocsinh" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">Thời khóa biểu học sinh</a>
+              </div>
+
+
+            </div>
+          </nav>
         </div>
+
       </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="package text-center bg-white">
-            <span class="img-wrap"><img src="images/flaticon/svg/001-jigsaw.svg" alt="Image" class="img-fluid"></span>
-            <h3 class="text-teal">Indoor Games</h3>
-            <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
-            <p><a href="#" class="btn btn-primary btn-custom-1 mt-4">Learn More</a></p>
+      <div class="col-sm-9 col-md-pull-3">
+				<script>
+					function caret(value){
+						if($('#span_caret_'+value).hasClass('glyphicon-triangle-top')){
+							$('#span_caret_'+value).removeClass('glyphicon-triangle-top');
+							$('#span_caret_'+value).addClass('glyphicon-triangle-bottom');
+							// alert(1);
+						}else{
+							$('#span_caret_'+value).removeClass('glyphicon-triangle-bottom');
+							$('#span_caret_'+value).addClass('glyphicon-triangle-top');
+							// alert(2);
+						}
+					}
+				</script>
+				<div class="chu_de">
+					<div class="top_chude container-fluid text-left" id="vitri_hienthi" style="background-color: rgb(255, 138, 21);     height: 43px;">
+						<a class="ten_chu_de" href="javascript:void();" style="color: rgb(128, 0, 64);">Cơ cấu tổ chức</a>
+					</div>
+					<div class="body_chude" style="background-color: rgb(255, 255, 166);">
+			
+			
+				<div class="table-responsive">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>STT</th>
+								<th>Họ và tên</th>
+								<th>Điện thoại</th>
+								<th>Địa chỉ</th>
+								<th>Chức vụ</th>
+							</tr>
+						</thead>
+						<tbody>
+									<tr class="info">
+										<td style="text-align:center">1</td>
+										<td><b>Trần Thị Kim Thu</b></td>
+										<td>02437429036&nbsp;</td>
+										<td>Minh Khai</td>
+										<td>Hiệu trưởng</td>
+									</tr>
+									<tr><td style="text-align:center">2</td>
+										<td><b>Bùi Thị Kiều Anh</b></td>
+										<td>02437521420</td>
+										<td>Đông Ngạc</td>
+										<td>Phó hiệu trưởng</td>
+									</tr>
+									<tr class="info">
+										<td style="text-align:center">3</td>
+										<td><b>Nguyễn Thị Cải</b></td>
+										<td>0369762185</td>
+										<td>Đông Sen - Thụy Phương</td>
+										<td>Nhân viên lao công</td>
+									</tr>
+									<tr><td style="text-align:center">4</td>
+										<td><b>Khuất Hoàng Tâm</b></td>
+										<td></td>
+										<td>Hoài Đức - Hà Nội</td>
+										<td>Kế toán ngân sách</td>
+									</tr>
+									<tr class="info">
+										<td style="text-align:center">5</td>
+										<td><b>Ngô Thu Nga</b></td>
+										<td></td>
+										<td>Thượng Cát</td>
+										<td>Y tế học đường</td>
+                  </tr>
+                  <tr class="info">
+										<td style="text-align:center">6</td>
+										<td><b>Nguyễn Huyền Anh </b></td>
+										<td></td>
+										<td>Thanh Hà</td>
+										<td>Giáo viên</td>
+                  </tr>
+                  <tr class="info">
+										<td style="text-align:center">7</td>
+										<td><b>Nguyễn Thị Hằng</b></td>
+										<td></td>
+										<td>Mỹ Hòa</td>
+										<td>Giáo viên</td>
+                  </tr>
+                  <tr class="info">
+										<td style="text-align:center">8</td>
+										<td><b>Ngô Thanh Hằng</b></td>
+										<td></td>
+										<td>Thanh Ba</td>
+										<td>Giáo viên</td>
+                  </tr>
+                  <tr class="info">
+										<td style="text-align:center">9</td>
+										<td><b>Lê Thị Luyến</b></td>
+										<td></td>
+										<td>Yên Mỹ</td>
+										<td>Giáo viên</td>
+                  </tr>
+                  <tr class="info">
+										<td style="text-align:center">10</td>
+										<td><b>Nguyễn Ngọc Ngân</b></td>
+										<td></td>
+										<td>Kim Động</td>
+										<td>Giáo viên</td>
+                  </tr>
+                  <tr class="info">
+										<td style="text-align:center">11</td>
+										<td><b>Hà Linh </b></td>
+										<td></td>
+										<td>Mỹ Hào</td>
+										<td>Giáo viên</td>
+									</tr>
+						</tbody>
+					</table>
+				</div>
+		
+					</div>
+				</div>
+			
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="package text-center bg-white">
-            <span class="img-wrap"><img src="images/flaticon/svg/002-target.svg" alt="Image" class="img-fluid"></span>
-            <h3 class="text-success">Outdoor Game and Event</h3>
-            <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
-            <p><a href="#" class="btn btn-warning btn-custom-1 mt-4">Learn More</a></p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="package text-center bg-white">
-            <span class="img-wrap"><img src="images/flaticon/svg/003-mission.svg" alt="Image" class="img-fluid"></span>
-            <h3 class="text-danger">Camping for Kids</h3>
-            <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
-            <p><a href="#" class="btn btn-success btn-custom-1 mt-4">Learn More</a></p>
-          </div>
-        </div>
-      </div>
+        
     </div>
   </div>
-  
-  <div class="site-section bg-light">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-12 text-center">
-          <span class="text-cursive h5 text-red d-block">Testimonial</span>
-          <h2 class="text-black">What Our Client Says About Us</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="testimonial-3-wrap">
-            
-
-            <div class="owl-carousel nonloop-block-13">
-              <div class="testimonial-3 d-flex">
-                <div class="vcard-wrap mr-5">
-                  <img src="images/person_1.jpg" alt="Image" class="vcard img-fluid">
-                </div>
-                <div class="text">
-                  <h3>Jeff Woodland</h3>
-                  <p class="position">Partner</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam earum libero rem maxime magnam. Similique esse ab earum, autem consectetur.</p>
-                </div>
-              </div>
-
-              <div class="testimonial-3 d-flex">
-                <div class="vcard-wrap mr-5">
-                  <img src="images/person_3.jpg" alt="Image" class="vcard img-fluid">
-                </div>
-                <div class="text">
-                  <h3>Jeff Woodland</h3>
-                  <p class="position">Partner</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam earum libero rem maxime magnam. Similique esse ab earum, autem consectetur.</p>
-                </div>
-              </div>
-
-              <div class="testimonial-3 d-flex">
-                <div class="vcard-wrap mr-5">
-                  <img src="images/person_2.jpg" alt="Image" class="vcard img-fluid">
-                </div>
-                <div class="text">
-                  <h3>Jeff Woodland</h3>
-                  <p class="position">Partner</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam earum libero rem maxime magnam. Similique esse ab earum, autem consectetur.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="row mt-5 justify-content-center">
-
-        <div class="col-md-8">
-          
-
-          <div class="row">
-            <div class="col-lg-3 text-center">
-              <span class="text-teal h2 d-block">3423</span>
-              <span>Happy Client</span>
-            </div>
-            <div class="col-lg-3 text-center">
-              <span class="text-yellow h2 d-block">4398</span>
-              <span>Members</span>
-            </div>
-            <div class="col-lg-3 text-center">
-              <span class="text-success h2 d-block">50+</span>
-              <span>Staffs</span>
-            </div>
-            <div class="col-lg-3 text-center">
-              <span class="text-danger h2 d-block">2000+</span>
-              <span>Our Followers</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
+  <!--/.container-->
+</article>

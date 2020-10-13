@@ -12,6 +12,7 @@ import { TintucComponent } from './tintuc/tintuc.component';
 import { ThucdonComponent } from './thucdon/thucdon.component';
 import { LienheComponent } from './lienhe/lienhe.component';
 import { QuanlyComponent } from './quanly/quanly.component';
+import { ChitiettintucComponent } from './chitiettintuc/chitiettintuc.component';
 
 export const trangchuRoutes :Routes = [
   {path: '', component: TrangchuComponent,
@@ -29,7 +30,7 @@ export const trangchuRoutes :Routes = [
       path: 'congvan', component: CongvanComponent
     },
     {
-      path: 'tintuc', component: TintucComponent
+      path: 'tintuc/:id', component: TintucComponent
     },
     {
       path: 'thucdon', component: ThucdonComponent
@@ -39,13 +40,16 @@ export const trangchuRoutes :Routes = [
     },
     {
       path: 'quanly', component: QuanlyComponent
+    },
+    {
+      path: 'chitiettintuc/:id', component: ChitiettintucComponent
     }
   ]
 }
 ];
 
 @NgModule({
-  declarations: [TrangchuComponent, MenuComponent, FooterComponent, HomeComponent, GioithieuComponent, CocautochucComponent, CongvanComponent, TintucComponent, ThucdonComponent, LienheComponent, QuanlyComponent],
+  declarations: [TrangchuComponent, MenuComponent, FooterComponent, HomeComponent, GioithieuComponent, CocautochucComponent, CongvanComponent, TintucComponent, ThucdonComponent, LienheComponent, QuanlyComponent, ChitiettintucComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(trangchuRoutes)

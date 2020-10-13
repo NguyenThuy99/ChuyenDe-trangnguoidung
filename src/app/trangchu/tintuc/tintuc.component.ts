@@ -15,14 +15,29 @@ export class TintucComponent extends BaseComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    Observable.combineLatest(
-      this._api.get('api/tintuc/get-tin-theo-loai'),
-    ).takeUntil(this.unsubscribe).subscribe(res => {
-      this.tintuc= res[0];
-      setTimeout(() => {
-        this.loadScripts();
-      });
-    }, err => { });
+    // Observable.combineLatest(
+    //   this._api.get('api/tintuc/get-tin-theo-loai/' ),
+    // ).takeUntil(this.unsubscribe).subscribe(res => {
+    //   this.tintuc= res[0];
+    //   setTimeout(() => {
+    //     this.loadScripts();
+    //   });
+    // }, err => { });
+
+
+
+    this.tintuc = [];
+    this._route.params.subscribe(params => {
+      let id = params['id'];
+      this._api.get('api/tintuc/get-tin-theo-loai/'+id).takeUntil(this.unsubscribe).subscribe(res => {
+        this.tintuc = res;
+        console.log(this.tintuc);
+        setTimeout(() => {
+         // this.loadScripts();
+        });
+      }); 
+    });
+
   }
 
 }

@@ -1,145 +1,152 @@
+<div class="site-section bg-light">
+  <div class="container">
 
-   
 
-    <div class="site-section bg-light">
-        <div class="container">
-        
-            
-          <div class="row" >
-            <div class="col-md-6 mb-5 mb-md-0">
-              <img src="assets/images/truong.jpg" alt="Image" class="img-fluid">
-            </div>
-            <div class="col-md-5 ml-auto pl-md-5">
-           
-              <h3 class="text-black"></h3>
-              <p><span>
-              </span></p>
-  
-              <p class="mt-5"><a href="#" class="btn btn-warning py-4 btn-custom-1">More About Us</a></p>
-            </div>
-          </div>
-        
-        </div>
+    <div class="row">
+      <div class="col-md-6 mb-5 mb-md-0">
+        <img src="assets/images/truong.jpg" alt="Image" class="img-fluid">
       </div>
-      
-      
-      <div class="site-section bg-info">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-12 text-center">
-              
-              <h2 class="text-white">Hoạt động nhà trường</h2>
-            </div>
-          </div>
-          <div class="row">
-            <ng-container *ngFor="let tin of loaitin">
-            <div class="col-lg-4 mb-4 mb-lg-0" style="padding-top: 6px;" >
-              <div class="package text-center bg-white">
-                <span class="img-wrap"><img src="assets/images/flaticon/svg/001-jigsaw.svg" alt="Image" class="img-fluid"></span>
-                <h3 class="text-teal">{{tin.tenloai}}</h3>
-                <p>Nhằm nâng cao chất lượng chăm sóc giáo dục trẻ và thống nhất với các bậc phụ huynh về các hoạt động của trẻ . Ngày 21/9/2020 Trường Mầm Non Thụy Phương tổ chức hội nghị họp ban đại diện cha mẹ học sinh năm học 2020-2021</p>
-                <p><a [routerLink]="['/tintuc',tin.id]" class="btn btn-primary btn-custom-1 mt-4">Chi tiêt</a></p>
-              </div>
-            </div>
-          </ng-container>
-          </div>
-        </div>
+      <div class="col-md-5 ml-auto pl-md-5">
+
+        <h3 class="text-black">Giới thiệu về nhà trường</h3>
+        <p><span>Đi dọc theo triền đê sông Hồng về phía Tây Cầu Thăng Long, chúng ta bắt gặp một ngôi trường xinh xắn đó
+            chính là trường mầm non Thụy Phương, phường Thụy Phương thuộc quận Bắc Từ Liêm. Ngược dòng thời gian, trường
+            mầm non Thụy Phương chúng tôi xây dựng từ năm 1961, đây là một trong những ngôi trường có bề dày lịch sử tại
+            Hà Nội.
+          </span></p>
+
+        <p class="mt-5"><a [routerLink]="['/gioithieu']" class="btn btn-warning py-4 btn-custom-1">More About Us</a></p>
       </div>
-  
-      <div class="site-section">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-12 text-center">
-              <span class="text-cursive h5 text-red d-block">Phòng trưng bày của chúng tôi</span>
-              <h2 class="text-black">Gallery Of The Kids</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 mb-4">
-              <a href="assets/images/img_1.jpg" data-fancybox="gal"><img src="assets/images/img_1.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-3 mb-4">
-              <a href="assets/images/img_2.jpg" data-fancybox="gal"><img src="assets/images/img_2.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-3 mb-4">
-              <a href="assets/images/img_3.jpg" data-fancybox="gal"><img src="assets/images/img_3.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-3 mb-4">
-              <a href="assets/images/img_4.jpg" data-fancybox="gal"><img src="assets/images/img_4.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-  
-            <div class="col-md-3 mb-4">
-              <a href="assets/images/img_5.jpg" data-fancybox="gal"><img src="assets/images/img_5.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-3 mb-4">
-              <a href="assets/images/img_2.jpg" data-fancybox="gal"><img src="assets/images/img_3.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-3 mb-4">
-              <a href="assets/images/img_2.jpg" data-fancybox="gal"><img src="assets/images/img_2.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-3 mb-4">
-              <img src="assets/images/img_1.jpg" alt="Image" class="img-fluid">
-            </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="site-section bg-info">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+
+        <h2 class="text-white">Hoạt động nhà trường</h2>
+      </div>
+    </div>
+    <div class="row">
+      <ng-container *ngFor="let tin of loaitin">
+        <div class="col-lg-4 mb-4 mb-lg-0" style="padding-top: 6px; ">
+          <div class="package text-center bg-white" style="width: 360px;
+              height: 490px;">
+            <span class="img-wrap"><img src="assets/images/flaticon/svg/001-jigsaw.svg" alt="Image"
+                class="img-fluid"></span>
+            <h3 class="text-teal" style="font-size: 24px;
+                font-family: serif;
+                color: black;
+                color: red;">{{tin.tenloai}}</h3>
+            <p style="    height: 223px;font-family: serif;color: black;">{{tin.mota}}</p>
+            <p style="margin-top: -55px;"><a [routerLink]="['/tintuc',tin.id]"
+                class="btn btn-primary btn-custom-1 mt-4">Chi tiêt</a></p>
           </div>
         </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+<div class="site-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <span class="text-cursive h5 text-red d-block">Phòng trưng bày của chúng tôi</span>
+
       </div>
-      <div class="site-section bg-teal">
-        <div class="container">
-          <div class="row justify-content-center text-center mb-5 section-2-title">
-            <div class="col-md-6">
-             
-              <h3 class="text-white text-center">Cảm nhận của phụ huynh</h3>
-             
-            </div>
-          </div>
-          <div class="row align-items-stretch">
-    
-            <div class="col-lg-4 col-md-6 mb-5">
-              <div class="post-entry-1 h-100 person-1 teal">
-                
-                  <img src="assets/images/person_1.jpg" alt="Image"
-                   class="img-fluid">
-              
-                <div class="post-entry-1-contents">
-                  <span class="meta">Founder</span>
-                  <h2>James Doe</h2>
-                  <p>Con an toàn, cha mẹ yên tâm. Đó là lý do tôi chọn trường Mầm Non HOA CÚC cho Sơn Tùng của tôi.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-              <div class="post-entry-1 h-100 person-1 yellow">
-                
-                  <img src="assets/images/person_2.jpg" alt="Image"
-                   class="img-fluid">
-              
-                <div class="post-entry-1-contents">
-                  <span class="meta">Founder</span>
-                  <h2>James Doe</h2>
-                  <p>Trường Mầm Non HOA CÚC đã làm cho tôi và các ba mẹ luôn yên tâm và tin tưởng khi gửi con đi học</p>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-lg-4 col-md-6 mb-5">
-              <div class="post-entry-1 h-100 person-1 red">
-                
-                  <img src="assets/images/person_3.jpg" alt="Image"
-                   class="img-fluid">
-              
-                <div class="post-entry-1-contents">
-                  <span class="meta">Founder</span>
-                  <h2>James Doe</h2>
-                  <p>Con tôi thật sự may mắn khi được học trong trường HOA CÚC trong suốt những năm đầu đời của bé </p>
-                </div>
-              </div>
-            </div>
-    
-            
-    
+    </div>
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <a href="assets/images/img_1.jpg" data-fancybox="gal"><img src="assets/images/img_1.jpg" alt="Image"
+            class="img-fluid"></a>
+      </div>
+      <div class="col-md-3 mb-4">
+        <a href="assets/images/img_2.jpg" data-fancybox="gal"><img src="assets/images/img_2.jpg" alt="Image"
+            class="img-fluid"></a>
+      </div>
+      <div class="col-md-3 mb-4">
+        <a href="assets/images/img_3.jpg" data-fancybox="gal"><img src="assets/images/img_3.jpg" alt="Image"
+            class="img-fluid"></a>
+      </div>
+      <div class="col-md-3 mb-4">
+        <a href="assets/images/img_4.jpg" data-fancybox="gal"><img src="assets/images/img_4.jpg" alt="Image"
+            class="img-fluid"></a>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <a href="assets/images/img_5.jpg" data-fancybox="gal"><img src="assets/images/img_5.jpg" alt="Image"
+            class="img-fluid"></a>
+      </div>
+      <div class="col-md-3 mb-4">
+        <a href="assets/images/img_2.jpg" data-fancybox="gal"><img src="assets/images/img_3.jpg" alt="Image"
+            class="img-fluid"></a>
+      </div>
+      <div class="col-md-3 mb-4">
+        <a href="assets/images/img_2.jpg" data-fancybox="gal"><img src="assets/images/img_2.jpg" alt="Image"
+            class="img-fluid"></a>
+      </div>
+      <div class="col-md-3 mb-4">
+        <img src="assets/images/img_1.jpg" alt="Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="site-section bg-teal">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5 section-2-title">
+      <div class="col-md-6">
+
+        <h3 class="text-white text-center">Cảm nhận của phụ huynh</h3>
+
+      </div>
+    </div>
+    <div class="row align-items-stretch">
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="post-entry-1 h-100 person-1 teal">
+
+          <img src="assets/images/person_1.jpg" alt="Image" class="img-fluid">
+
+          <div class="post-entry-1-contents">
+
+            <h2>Anh Tâm</h2>
+            <p>Con an toàn, cha mẹ yên tâm. Đó là lý do tôi chọn trường Mầm Non HOA CÚC cho Sơn Tùng của tôi.</p>
           </div>
         </div>
       </div>
-   
-  
-    
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="post-entry-1 h-100 person-1 yellow">
+
+          <img src="assets/images/person_2.jpg" alt="Image" class="img-fluid">
+
+          <div class="post-entry-1-contents">
+
+            <h2>Chị Hồng</h2>
+            <p>Trường Mầm Non HOA CÚC đã làm cho tôi và các ba mẹ luôn yên tâm và tin tưởng khi gửi con đi học</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="post-entry-1 h-100 person-1 red">
+
+          <img src="assets/images/person_3.jpg" alt="Image" class="img-fluid">
+
+          <div class="post-entry-1-contents">
+
+            <h2>Chị Hương</h2>
+            <p>Con tôi thật sự may mắn khi được học trong trường HOA CÚC trong suốt những năm đầu đời của bé </p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
