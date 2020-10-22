@@ -85,41 +85,23 @@ margin-bottom: 50px;">
                     <div class="body_chude" style="padding-left: 20px;
                     /* margin-left: 5px; */
                     background-color: rgb(255, 255, 166);
-                    padding-top: 10px;">
+                    padding-top: 10px;height: 50px;">
 
-                        <div class="" *ngFor="let td of thucdon">
-                            <div class="bai_viet_1">
-                                <a >
-                                    <img class="anh_title" src="assets/images/{{td.hinhanh}}" alt="" title=""
-                                        style="height: 500px; width: 800px;">
+                        <div class="" *ngFor="let cd of chude">
+                            <div class="bai_viet_1" >
+                                <a [routerLink]="['/chitietchude',cd.id]">
+                                    
                                     <h4 class="tieu_de_bai_viet padding-top" style="margin: 0;
                                     padding: 0;
                                     font-size: 14px;
-                                    font-weight: bold;">{{td.tieude}}<small></small></h4>
+                                    font-weight: bold;" >{{cd.tieude}}<small></small></h4>
                                    
                                 </a>
-                                <div class="tomtat_baiviet"></div>
+                                <!-- <div class="tomtat_baiviet">{{cd.ngaydang}}}</div> -->
                             </div>
 
                         </div>
-                        <div class="row padding-top">
-                            <div class="col-xs-12">
-                                <ul class="pull-right pagination" id="pagingcontrols">
-                                    <li class="disabled"><a href="#" aria-label="Older"><span
-                                                aria-hidden="true"></span>«</a></li>
-                                    <li class="active"><a
-                                            href="index.php?chucnang=view_chude&amp;chudecode=50&amp;ht=5&amp;p=1#vitri_hienthi"
-                                            title="Trang 1">1</a></li>
-                                    <li><a href="index.php?chucnang=view_chude&amp;chudecode=50&amp;ht=5&amp;p=2#vitri_hienthi"
-                                            title="Trang 2">2</a></li>
-                                    <li><a href="index.php?chucnang=view_chude&amp;chudecode=50&amp;ht=5&amp;p=3#vitri_hienthi"
-                                            title="Trang 3">3</a></li>
-                                    <li><a href="index.php?chucnang=view_chude&amp;chudecode=50&amp;ht=5&amp;p=11#vitri_hienthi"
-                                            title="Trang cuối" aria-label="Older"><span aria-hidden="true"></span>»</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 

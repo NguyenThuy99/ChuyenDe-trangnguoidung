@@ -1,0 +1,139 @@
+<article class="" style="position:relative ;margin-top: 50px;
+margin-bottom: 50px;">
+	<div id="background_article" class="background-article"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-md-push-9" style="margin-top: -34px">
+				<div class="row khoi_phai">
+					<nav class="navbar navbar-collapse navbar-default">
+						<div class="navbar-header pull-right">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+								data-target="#navbar1" aria-expanded="true" aria-controls="navbar">
+
+							</button>
+						</div>
+						<div class="clearfix visible-xs"></div>
+						<div id="navbar1" class="collapse navbar-collapse navbar-default navbar-right collapse show">
+							<div class="list-group chu_de">
+								<div class="container-fluid text-center top_chude"
+									style="background-color: rgb(255, 138, 21);">
+									<p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Văn bản hành chính</p>
+								</div><a href="index.php?chucnang=view_lichcongtac" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Lịch công tác</a><a
+									href="index.php?chucnang=view_vanbanphapquy" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Văn bản pháp quy</a><a
+									href="index.php?chucnang=view_congvanchidao" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Công văn chỉ đạo</a><a
+									href="index.php?chucnang=view_giaymoi" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Giấy mời</a><a
+									href="index.php?chucnang=view_thongtin3congkhai" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Thông tin 3 công khai</a>
+							</div>
+							<div class="list-group chu_de">
+								<div class="container-fluid text-center top_chude"
+									style="background-color: rgb(255, 138, 21);">
+									<p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Chia sẻ - trao đổi</p>
+								</div><a href="index.php?chucnang=view_baigiangdientu" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Bài giảng điện tử</a><a
+									href="index.php?chucnang=view_traodoikinhnghiem" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Trao đổi kinh nghiệm</a><a
+									href="index.php?chucnang=view_traodoitructuyen" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Trao đổi trực tuyên</a>
+							</div>
+							<div class="list-group chu_de">
+								<div class="container-fluid text-center top_chude"
+									style="background-color: rgb(255, 138, 21);">
+									<p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Nhà trường - phụ huynh</p>
+								</div><a href="index.php?chucnang=view_thucdon" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Thực đơn của bé</a><a
+									href="index.php?chucnang=view_hoidap" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Hỏi đáp</a><a
+									href="index.php?chucnang=view_tiepthu_ykien" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Ý kiến đóng góp</a><a
+									href="index.php?chucnang=view_tracuudiemhocsinh" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Tra cứu điểm học sinh</a><a
+									href="index.php?chucnang=view_thoikhoabieuhocsinh" class="list-group-item"
+									style="background-color: rgb(255, 255, 255);">Thời khóa biểu học sinh</a>
+							</div>
+
+
+						</div>
+					</nav>
+				</div>
+
+			</div>
+			<div class="col-sm-9 col-md-pull-3">
+				<script>
+					function caret(value) {
+						if ($('#span_caret_' + value).hasClass('glyphicon-triangle-top')) {
+							$('#span_caret_' + value).removeClass('glyphicon-triangle-top');
+							$('#span_caret_' + value).addClass('glyphicon-triangle-bottom');
+							// alert(1);
+						} else {
+							$('#span_caret_' + value).removeClass('glyphicon-triangle-bottom');
+							$('#span_caret_' + value).addClass('glyphicon-triangle-top');
+							// alert(2);
+						}
+					}
+				</script>
+				<div class="chu_de">
+					<div class="top_chude container-fluid text-left" id="vitri_hienthi"
+						style="background-color: rgb(255, 138, 21);">
+						<a class="ten_chu_de" href="javascript:void();" style="color: rgb(128, 0, 64);">Danh sách video
+							hoạt động</a>
+					</div>
+					<div class="body_chude" style="background-color: rgb(255, 255, 166);">
+
+						<form name="frm_DS" enctype="multipart/form-data" action="index.php?chucnang=view_videohoatdong"
+							method="POST">
+							<div class="row">
+								<div class="col-sm-3">
+									<font face="Arial" size="2">Chọn chủ đề video</font>
+								</div>
+							
+							</div>
+							<div class="row padding-top">
+								<div class="col-sm-12">Có tất cả : <font
+										style="font-family:Times New Roman;color:#ff0000;font-size:18px;">484</font>
+									video
+								</div>
+							</div>
+							<hr>
+							<div class=""  *ngFor="let qc of quangcao">
+
+								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center" style="border:1px solid #ccc; float: left; width: 300px;
+									height: 320px;">
+									<iframe style="border:1px solid #ccc;border-radius:10px;" width="200px"
+										height="250px" src="https://www.youtube.com/embed/{{qc.video}}" frameborder="0"
+										allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen=""></iframe>
+									<h5 class="text-center">{{qc.tieude}}</h5>
+								</div>
+							</div>
+						</form>
+						<div class="row padding-top">
+							<div class="col-xs-12">
+								<ul class="pull-right pagination" id="pagingcontrols">
+									<li class="disabled"><a href="#" aria-label="Older"><span
+												aria-hidden="true"></span>«</a></li>
+									<li class="active"><a
+											href="index.php?chucnang=view_videohoatdong&amp;ht=9&amp;p=1#vitri_hienthi"
+											title="Trang 1">1</a></li>
+									<li><a href="index.php?chucnang=view_videohoatdong&amp;ht=9&amp;p=2#vitri_hienthi"
+											title="Trang 2">2</a></li>
+									<li><a href="index.php?chucnang=view_videohoatdong&amp;ht=9&amp;p=3#vitri_hienthi"
+											title="Trang 3">3</a></li>
+									<li><a href="index.php?chucnang=view_videohoatdong&amp;ht=9&amp;p=54#vitri_hienthi"
+											title="Trang cuối" aria-label="Older"><span aria-hidden="true"></span>»</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--/.container-->
+</article>
