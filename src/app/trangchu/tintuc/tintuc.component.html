@@ -83,26 +83,32 @@ margin-bottom: 50px;">
                             trường</a>
                     </div>
                     <div class="body_chude" style="padding-left: 20px;
-                    /* margin-left: 5px; */
+                   height: 500px;
                     background-color: rgb(255, 255, 166);
                     padding-top: 10px;">
 
-                        <div class="" *ngFor="let tin of tintuc">
+                        <div class="" *ngFor="let tin of tintuc" style="    margin-bottom: 40px;">
                             <div class="bai_viet_1">
                                 <a [routerLink]="['/chitiettintuc',tin.id]">
                                     <img class="anh_title" src="assets/images/{{tin.hinhanh}}" alt="" title=""
-                                        style="height: 100px; width: 100px;">
+                                        style="height: 100px; width: 100px;width: 15% !important;
+                                        margin: 0 15px 5px 0;
+                                        float: left;">
                                     <h4 class="tieu_de_bai_viet padding-top" style="margin: 0;
+                                    padding: 0;
+                                    font-size: 14px;
+                                    font-weight: bold;margin: 0;
                                     padding: 0;
                                     font-size: 14px;
                                     font-weight: bold;">{{tin.tieude}}<small></small></h4>
                                    
                                 </a>
-                                <div class="tomtat_baiviet">{{tin.mota}}}</div>
+                                <div class="tomtat_baiviet" style="font-size: 13px;
+                                margin-top: 10px;">{{tin.mota}}}</div> 
                             </div>
 
                         </div>
-                        <div class="row padding-top">
+                        <!-- <div class="row padding-top">
                             <div class="col-xs-12">
                                 <ul class="pull-right pagination" id="pagingcontrols">
                                     <li class="disabled"><a href="#" aria-label="Older"><span
@@ -119,7 +125,7 @@ margin-bottom: 50px;">
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
