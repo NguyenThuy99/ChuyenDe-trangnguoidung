@@ -17,16 +17,11 @@ margin-bottom: 50px;">
               <div class="list-group chu_de">
                 <div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
                   <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Văn bản hành chính</p>
-                </div><a href="index.php?chucnang=view_lichcongtac" class="list-group-item"
-                  style="background-color: rgb(255, 255, 255);">Lịch công tác</a><a
-                  href="index.php?chucnang=view_vanbanphapquy" class="list-group-item"
-                  style="background-color: rgb(255, 255, 255);">Văn bản pháp quy</a><a
-                  href="index.php?chucnang=view_congvanchidao" class="list-group-item"
-                  style="background-color: rgb(255, 255, 255);">Công văn chỉ đạo</a><a
-                  href="index.php?chucnang=view_giaymoi" class="list-group-item"
-                  style="background-color: rgb(255, 255, 255);">Giấy mời</a><a
-                  href="index.php?chucnang=view_thongtin3congkhai" class="list-group-item"
-                  style="background-color: rgb(255, 255, 255);">Thông tin 3 công khai</a>
+				</div>
+				<div class="" *ngFor="let lcd of loaichude">
+					<a [routerLink]="['/congvan']" class="list-group-item"
+					  style="background-color: rgb(255, 255, 255);">{{lcd.tenchude}}</a>
+					</div>
               </div>
               <div class="list-group chu_de">
                 <div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">

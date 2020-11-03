@@ -8,24 +8,14 @@ import { BaseComponent } from 'src/app/lib/base.component';
   styleUrls: ['./tintuc.component.css']
 })
 export class TintucComponent extends BaseComponent implements OnInit {
-
+  loaichude:any;
   tintuc:any;
   constructor(injector: Injector) { 
     super(injector);
   }
 
   ngOnInit(): void {
-    // Observable.combineLatest(
-    //   this._api.get('api/tintuc/get-tin-theo-loai/' ),
-    // ).takeUntil(this.unsubscribe).subscribe(res => {
-    //   this.tintuc= res[0];
-    //   setTimeout(() => {
-    //     this.loadScripts();
-    //   });
-    // }, err => { });
-
-
-
+   
     this.tintuc = [];
     this._route.params.subscribe(params => {
       let id = params['id'];

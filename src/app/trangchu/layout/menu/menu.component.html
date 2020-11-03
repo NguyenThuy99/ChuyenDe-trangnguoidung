@@ -18,14 +18,16 @@
             <ul class="site-menu main-menu js-clone-nav mr-auto ">
               <li class="active"><a href="index.html" class="nav-link">Trang chủ</a></li>
               <!-- <li><a href="" class="nav-link">Giới thiệu</a></li> -->
-              <a class="text-uppercase" [routerLink]="['/gioithieu']" routerLinkActive="router-link-active"  title="Giới thiệu">
-                <span class="title">Giới thiệu</span>   &nbsp;<span class="caret"></span>
-              </a>
-              <a class="open-sub-menu" href="javascript:;"><i class="fa fa-plus" aria-hidden="true"></i>
-              </a>
+              <!-- <a class="text-uppercase" [routerLink]="['/gioithieu']" routerLinkActive="router-link-active"  title="Giới thiệu">
+                <span class="title">Giới thiệu</span>   &nbsp;<span class="caret"></span> 
+                Giới thiệu
+              </a> -->
+              <li><a  [routerLink]="['/gioithieu']" class="nav-link">Giới thiệu</a></li>
+              <!-- <li><a class="open-sub-menu" href="javascript:;"><i class="fa fa-plus" aria-hidden="true"></i>
+              </a></li> -->
                
          
-            <span class="left-bee"></span>
+            <!-- <span class="left-bee"></span> -->
 
               <li><a  [routerLink]="['/cocautochuc']" class="nav-link">Cơ cấu tổ chức</a></li>
               <li><a [routerLink]="['/hoatdong']" class="nav-link">Hoạt động cuả bé</a></li>
@@ -54,7 +56,7 @@
     <div class="container">
      
        
-          <img src="assets/images/slide.jpg" alt="Image"  class="img-fluid" style="width: 1349px; height: 435px;"> 
+          <img src="assets/images/slide.jpg" alt="Image"  class="img-fluid" style="width: 1349px; height: 460px;"> 
           
         
       

@@ -17,16 +17,11 @@ margin-bottom: 50px;">
               <div class="list-group chu_de">
                 <div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
                   <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Văn bản hành chính</p>
-                </div><a href="index.php?chucnang=view_lichcongtac" class="list-group-item"
-                  style="background-color: rgb(255, 255, 255);">Lịch công tác</a><a
-                  href="index.php?chucnang=view_vanbanphapquy" class="list-group-item"
-                  style="background-color: rgb(255, 255, 255);">Văn bản pháp quy</a><a
-                  href="index.php?chucnang=view_congvanchidao" class="list-group-item"
-                  style="background-color: rgb(255, 255, 255);">Công văn chỉ đạo</a><a
-                  href="index.php?chucnang=view_giaymoi" class="list-group-item"
-                  style="background-color: rgb(255, 255, 255);">Giấy mời</a><a
-                  href="index.php?chucnang=view_thongtin3congkhai" class="list-group-item"
-                  style="background-color: rgb(255, 255, 255);">Thông tin 3 công khai</a>
+                </div >
+                <div class="" *ngFor="let lcd of loaichude">
+                <a [routerLink]="['/congvan']" class="list-group-item"
+                  style="background-color: rgb(255, 255, 255);">{{lcd.tenchude}}</a>
+                </div>
               </div>
               <div class="list-group chu_de">
                 <div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
@@ -41,7 +36,7 @@ margin-bottom: 50px;">
               <div class="list-group chu_de">
                 <div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
                   <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Nhà trường - phụ huynh</p>
-                </div><a href="index.php?chucnang=view_thucdon" class="list-group-item"
+                </div><a [routerLink]="['/thucdon']"  class="list-group-item"
                   style="background-color: rgb(255, 255, 255);">Thực đơn của bé</a><a
                   href="index.php?chucnang=view_hoidap" class="list-group-item"
                   style="background-color: rgb(255, 255, 255);">Hỏi đáp</a><a
@@ -119,10 +114,10 @@ margin-bottom: 50px;">
 
               <p><span style="color:#003399">Điện thoại: 0989151281</span></p>
 
-              <p><span style="font-size:14pt">&nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+              <!-- <p><span style="font-size:14pt">&nbsp; &nbsp; &nbsp; &nbsp;</span></p> -->
 
-              <p style="margin-left:0cm; margin-right:0cm; text-align:justify" style="color: black;"><span style="font-size:10pt"><span
-                    style="font-family:Calibri,sans-serif"><span style="font-size:14.0pt">Đi dọc theo triền đê sông Hồng
+              <p style="margin-left:0cm; margin-right:0cm; text-align:justify" style="color: black;text-indent: 30px;"><span style="font-size:10pt"><span
+                    style="font-family:Calibri,sans-serif"><span style="font-size:14.0pt"> Đi dọc theo triền đê sông Hồng
                       về phía Tây Cầu Thăng Long, chúng ta bắt gặp một ngôi trường xinh xắn đó chính là trường mầm non
                       Hoa Cúc, phường Hoa Cúc thuộc quận Bắc Từ Liêm. Ngược dòng thời gian, trường mầm non Hoa Cúc chúng
                       tôi xây dựng từ năm 1961, đây là một trong những ngôi trường có bề dày lịch sử tại Hà Nội.Trải qua
@@ -131,7 +126,7 @@ margin-bottom: 50px;">
                         2013, trường đạt chuẩn quốc gia mức độ 1.Năm 2016, nhà trường được Sở GD&amp;ĐT công nhận chất
                         lượng giáo dục mức độ 2.</span></span></span></span></p>
 
-              <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:10pt"><span
+              <p style="margin-left:0cm; margin-right:0cm; text-align:justify;text-indent: 30px;"><span style="font-size:10pt"><span
                     style="font-family:Calibri,sans-serif"><span style="font-size:14.0pt"><span
                         style="color:black">Không chỉ là ngôi trường có bề dày lịch sử, trường MN Hoa Cúc cũng có bảng
                         thành tích đáng ghi nhận. Trong nhiều năm liên tiếp, nhà rường đón nhận danh hiệu trường mầm non
@@ -143,7 +138,7 @@ margin-bottom: 50px;">
                         quận, các bậc cha mẹ học sinh đánh giá cao và được nhân rộng mô hình đổi mới sự kết nối giữa cha
                         mẹ học sinh với nhà trường.</span></span></span></span></p>
 
-              <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:10pt"><span
+              <p style="margin-left:0cm; margin-right:0cm; text-align:justify;text-indent: 30px;"><span style="font-size:10pt"><span
                     style="font-family:Calibri,sans-serif"><span style="font-size:14.0pt;color:black">Với 1 khu trung tâm và 2 điểm
                       trường, chúng tôi quản lý 736 bé tại 18 lớp học trong đó có 3 lớp nhà trẻ, 15 lớp mẫu giáo. Toàn
                       trường có&nbsp;72 cán bộ, giáo viên, nhân viên, những người đang hàng ngày tận tâm chăm sóc giáo

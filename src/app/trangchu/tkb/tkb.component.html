@@ -18,10 +18,16 @@ margin-bottom: 50px;">
                                 <div class="container-fluid text-center top_chude"
                                     style="background-color: rgb(255, 138, 21);">
                                     <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Văn bản hành chính</p>
-                                </div><div class="" *ngFor="let lcd of loaichude">
-                                    <a [routerLink]="['/congvan']" class="list-group-item"
-                                      style="background-color: rgb(255, 255, 255);">{{lcd.tenchude}}</a>
-                                    </div>
+                                </div><a href="index.php?chucnang=view_lichcongtac" class="list-group-item"
+                                    style="background-color: rgb(255, 255, 255);">Lịch công tác</a><a
+                                    href="index.php?chucnang=view_vanbanphapquy" class="list-group-item"
+                                    style="background-color: rgb(255, 255, 255);">Văn bản pháp quy</a><a
+                                    href="index.php?chucnang=view_congvanchidao" class="list-group-item"
+                                    style="background-color: rgb(255, 255, 255);">Công văn chỉ đạo</a><a
+                                    href="index.php?chucnang=view_giaymoi" class="list-group-item"
+                                    style="background-color: rgb(255, 255, 255);">Giấy mời</a><a
+                                    href="index.php?chucnang=view_thongtin3congkhai" class="list-group-item"
+                                    style="background-color: rgb(255, 255, 255);">Thông tin 3 công khai</a>
                             </div>
                             <div class="list-group chu_de">
                                 <div class="container-fluid text-center top_chude"
@@ -77,32 +83,26 @@ margin-bottom: 50px;">
                             trường</a>
                     </div>
                     <div class="body_chude" style="padding-left: 20px;
-                   height: 500px;
+                    /* margin-left: 5px; */
                     background-color: rgb(255, 255, 166);
                     padding-top: 10px;">
 
-                        <div class="" *ngFor="let tin of tintuc" style="    margin-bottom: 40px;">
+                        <div class="" *ngFor="let tk of tkb">
                             <div class="bai_viet_1">
-                                <a [routerLink]="['/chitiettintuc',tin.id]">
-                                    <img class="anh_title" src="assets/images/{{tin.hinhanh}}" alt="" title=""
-                                        style="height: 100px; width: 100px;width: 15% !important;
-                                        margin: 0 15px 5px 0;
-                                        float: left;">
+                                <a >
+                                    <img class="anh_title" src="assets/images/{{tk.hinhanh}}" alt="" title=""
+                                        style="height: 500px; width: 800px;">
                                     <h4 class="tieu_de_bai_viet padding-top" style="margin: 0;
                                     padding: 0;
-                                    font-size: 18px;
-                                    font-weight: bold;margin: 0;
-                                    padding: 0;
-                                    
-                                    font-weight: bold;">{{tin.tieude}}<small></small></h4>
+                                    font-size: 14px;
+                                    font-weight: bold;">{{tk.ten}}<small></small></h4>
                                    
                                 </a>
-                                <div class="tomtat_baiviet" style="font-size: 14px;
-                                margin-top: 10px;text-indent: 30px;">{{tin.mota}}}</div> 
+                                <div class="tomtat_baiviet"></div>
                             </div>
 
                         </div>
-                        <!-- <div class="row padding-top">
+                        <div class="row padding-top">
                             <div class="col-xs-12">
                                 <ul class="pull-right pagination" id="pagingcontrols">
                                     <li class="disabled"><a href="#" aria-label="Older"><span
@@ -119,7 +119,7 @@ margin-bottom: 50px;">
                                     </li>
                                 </ul>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
 
