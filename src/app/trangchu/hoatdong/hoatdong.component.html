@@ -90,12 +90,15 @@ margin-bottom: 50px;">
 								<div class="col-sm-3">
 									<font face="Arial" size="2">Chọn chủ đề video</font>
 								</div>
+								<div class="col-sm-9">
+									<select size="1" name="ChuDe_DS" onchange="form.submit()">
+										<option value="0">Tất cả</option><option value="373">MV ''Vững tin Việt Nam'' tuyên truyền chống dịch Covid-19</option><option value="216">Kể chuyện cho bé nghe</option><option value="217">Bé yêu âm nhạc</option><option value="218">Bé yêu khoa học</option><option value="219">Bé làm quen chữ cái</option><option value="220">MONTESSORI</option><option value="343">Chăm sóc nuôi dưỡng</option><option value="9">Hoạt động của các bé</option><option value="10">Hoạt động các Ngày hội - ngày lễ - Sự kiện</option><option value="221">Cùng bé yêu sáng tạo</option><option value="212">MGL- Video hướng dẫn các con học tại nhà</option><option value="125">Tài năng nhí</option><option value="84">Tuyên truyền</option><option value="56">Kỹ năng sống</option><option value="11">Môi trường giáo dục lấy trẻ làm trung tâm</option><option value="213">MGN-Video hướng dẫn các con học tại nhà</option><option value="6">Giới thiệu về nhà trường</option><option value="7">Thư viện cộng đồng</option><option value="12">Hoạt động học</option><option value="214">MGB-Video hướng dẫn các bé học tại nhà</option><option value="8">Bồi dưỡng chuyên môn</option><option value="215">NT-Video hướng dẫn các con học tại nhà</option><option value="5">Hoạt động chào cờ</option>
+									</select>
+								</div>
 							
 							</div>
 							<div class="row padding-top">
-								<div class="col-sm-12">Có tất cả : <font
-										style="font-family:Times New Roman;color:#ff0000;font-size:18px;">484</font>
-									video
+								<div class="col-sm-12">Có tất cả : <font style="font-family:Times New Roman;color:#ff0000;font-size:18px;">484</font> video
 								</div>
 							</div>
 							<hr>
@@ -103,11 +106,12 @@ margin-bottom: 50px;">
 
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center" style="border:1px solid #ccc; float: left; width: 300px;
 									height: 320px;">
-									<iframe style="border:1px solid #ccc;border-radius:10px;" width="200px"
-										height="250px" src="https://www.youtube.com/embed/{{qc.video}}" frameborder="0"
+									<iframe style="border:1px solid #ccc;border-radius:10px;" width="200px" height="250px"
+									 src="https://www.youtube.com/embed/IQewITDKtOY" frameborder="0"
 										allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-										allowfullscreen=""></iframe>
-									<h5 class="text-center">{{qc.tieude}}</h5>
+										allowfullscreen="">
+									</iframe>
+									<h5 class="text-center" style="font-size: 15px;">{{qc.tieude}}</h5>
 								</div>
 							</div>
 						</form>
