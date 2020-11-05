@@ -77,14 +77,14 @@ margin-bottom: 50px;">
                             trường</a>
                     </div>
                     <div class="body_chude" style="padding-left: 20px;
-                   height: 500px;
+                   height: 1000px;
                     background-color: rgb(255, 255, 166);
                     padding-top: 10px;">
 
                         <div class="" *ngFor="let tin of tintuc" style="    margin-bottom: 40px;">
                             <div class="bai_viet_1">
                                 <a [routerLink]="['/chitiettintuc',tin.id]">
-                                    <img class="anh_title" src="assets/images/{{tin.hinhanh}}" alt="" title=""
+                                    <img class="anh_title" src="{{tin.hinhanh}}" alt="" title=""
                                         style="height: 100px; width: 100px;width: 15% !important;
                                         margin: 0 15px 5px 0;
                                         float: left;">

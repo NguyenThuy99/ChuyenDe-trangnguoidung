@@ -77,31 +77,55 @@ margin-bottom: 50px;">
                     }
                 </script>
                 <div class="chu_de">
-                    <div class="top_chude container-fluid text-left" id="vitri_hienthi"
-                        style="background-color: rgb(255, 138, 21); height: 43px;">
-                        <a class="ten_chu_de" href="javascript:void();" style="color: rgb(128, 0, 64);">Thực đơn nhà
-                            trường</a>
-                    </div>
-                    <div class="body_chude" style="padding-left: 20px;
-                    /* margin-left: 5px; */
-                    background-color: rgb(255, 255, 166);
-                    padding-top: 10px;height: 50px;">
+                    <div class="body_chude" style="background-color: rgb(255, 255, 166);">
 
-                        <div class="" *ngFor="let cd of chude">
-                            <div class="bai_viet_1" >
-                                <a [routerLink]="['/chitietchude',cd.id]">
-                                    
-                                    <h4 class="tieu_de_bai_viet padding-top" style="margin: 0;
-                                    padding: 0;
-                                    font-size: 14px;
-                                    font-weight: bold;" >{{cd.tieude}}<small></small></h4>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover middle_center">
+                                <thead>
+                                    <tr>
+                                        <th width="85%">Tên văn bản pháp quy</th>
+                                        <th width="15%">Ngày văn bản</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let cd of chude">
+                                        <td width="80%" style="text-align:left">
+
+                                            <a [routerLink]="['/chitietchude',cd.id]">
+                                                <b>{{cd.tieude}}</b>
+                                            </a>
+                                            <br>
+                                            PHÒNG CHỐNG DỊCH COVID 19
+
+                                        </td>
+                                        <td width="20%" align="right">
+                                            {{cd.ngaydang}}
+
+                                        </td>
+                                    </tr>
                                    
-                                </a>
-                                <!-- <div class="tomtat_baiviet">{{cd.ngaydang}}}</div> -->
-                            </div>
-
+                                </tbody>
+                            </table>
                         </div>
-                        
+                        <div class="row padding-top">
+                            <div class="col-xs-12">
+                                <ul class="pull-right pagination" id="pagingcontrols">
+                                    <li class="disabled"><a href="#" aria-label="Older"><span
+                                                aria-hidden="true"></span>«</a></li>
+                                    <li class="active"><a
+                                            href="index.php?chucnang=view_vanbanphapquy&amp;ChuDe_vbpq=0&amp;TuNgay=&amp;TuThang=&amp;TuNam=&amp;DenNgay=&amp;DenThang=&amp;DenNam=&amp;ht=5&amp;p=1#vitri_hienthi"
+                                            title="Trang 1">1</a></li>
+                                    <li><a href="index.php?chucnang=view_vanbanphapquy&amp;ChuDe_vbpq=0&amp;TuNgay=&amp;TuThang=&amp;TuNam=&amp;DenNgay=&amp;DenThang=&amp;DenNam=&amp;ht=5&amp;p=2#vitri_hienthi"
+                                            title="Trang 2">2</a></li>
+                                    <li><a href="index.php?chucnang=view_vanbanphapquy&amp;ChuDe_vbpq=0&amp;TuNgay=&amp;TuThang=&amp;TuNam=&amp;DenNgay=&amp;DenThang=&amp;DenNam=&amp;ht=5&amp;p=3#vitri_hienthi"
+                                            title="Trang 3">3</a></li>
+                                    <li><a href="index.php?chucnang=view_vanbanphapquy&amp;ChuDe_vbpq=0&amp;TuNgay=&amp;TuThang=&amp;TuNam=&amp;DenNgay=&amp;DenThang=&amp;DenNam=&amp;ht=5&amp;p=5#vitri_hienthi"
+                                            title="Trang cuối" aria-label="Older"><span aria-hidden="true"></span>»</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
