@@ -3,25 +3,18 @@ import { Observable } from 'rxjs';
 import { BaseComponent } from 'src/app/lib/base.component';
 
 @Component({
-  selector: 'app-tkb',
-  templateUrl: './tkb.component.html',
-  styleUrls: ['./tkb.component.css']
+  selector: 'app-kinhnghiem',
+  templateUrl: './kinhnghiem.component.html',
+  styleUrls: ['./kinhnghiem.component.css']
 })
-export class TkbComponent  extends BaseComponent implements OnInit {
-  loaichude:any;
-  tkb:any;
+export class KinhnghiemComponent extends BaseComponent implements OnInit {
+
+  loaichude: any;
   constructor(injector: Injector) {
     super(injector);
   }
+
   ngOnInit(): void {
-    Observable.combineLatest(
-      this._api.get('api/tkb/get-all'),
-    ).takeUntil(this.unsubscribe).subscribe(res => {
-      this.tkb = res[0];
-      setTimeout(() => {
-        this.loadScripts();
-      });
-    }, err => { });
     Observable.combineLatest(
       this._api.get('api/loaichude/get-all-loaichude'),
     ).takeUntil(this.unsubscribe).subscribe(res => {
@@ -30,7 +23,5 @@ export class TkbComponent  extends BaseComponent implements OnInit {
         this.loadScripts();
       });
     }, err => { });
-
   }
-  }
-  
+}

@@ -1,0 +1,167 @@
+<article class="" style="position:relative ;margin-top: 50px;
+margin-bottom: 50px;">
+    <div id="background_article" class="background-article"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-push-9" style="margin-top: -34px">
+                <div class="row khoi_phai">
+                  <nav class="navbar navbar-collapse navbar-default">
+                    <div class="navbar-header pull-right">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1"
+                        aria-expanded="true" aria-controls="navbar">
+        
+                      </button>
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                    <div id="navbar1" class="collapse navbar-collapse navbar-default navbar-right collapse show">
+                      <div class="list-group chu_de">
+                        <div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
+                          <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Văn bản hành chính</p>
+                        </div >
+                        <div class="" *ngFor="let lcd of loaichude">
+                        <a [routerLink]="['/congvan']" class="list-group-item"
+                          style="background-color: rgb(255, 255, 255);">{{lcd.tenchude}}</a>
+                        </div>
+                      </div>
+                      <div class="list-group chu_de">
+                        <div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
+                          <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Chia sẻ - trao đổi</p>
+                        </div><a href="index.php?chucnang=view_baigiangdientu" class="list-group-item"
+                          style="background-color: rgb(255, 255, 255);">Bài giảng điện tử</a>
+                          <a
+                         
+                           class="list-group-item"
+                          style="background-color: rgb(255, 255, 255);">Trao đổi kinh nghiệm</a>
+                          <a
+                          href="index.php?chucnang=view_traodoitructuyen" class="list-group-item"
+                          style="background-color: rgb(255, 255, 255);">Trao đổi trực tuyên</a>
+                      </div>
+                      <div class="list-group chu_de">
+                        <div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
+                          <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Nhà trường - phụ huynh</p>
+                        </div><a  class="list-group-item"
+                          style="background-color: rgb(255, 255, 255);">Thực đơn của bé</a>
+                         
+                        <a
+                        class="list-group-item"
+                          style="background-color: rgb(255, 255, 255);">Thời khóa biểu học sinh</a>
+                      </div>
+        
+        
+                    </div>
+                  </nav>
+                </div>
+        
+              </div>
+            <div class="col-sm-9 col-md-pull-3">
+                <script>
+                    function caret(value) {
+                        if ($('#span_caret_' + value).hasClass('glyphicon-triangle-top')) {
+                            $('#span_caret_' + value).removeClass('glyphicon-triangle-top');
+                            $('#span_caret_' + value).addClass('glyphicon-triangle-bottom');
+                            // alert(1);
+                        } else {
+                            $('#span_caret_' + value).removeClass('glyphicon-triangle-bottom');
+                            $('#span_caret_' + value).addClass('glyphicon-triangle-top');
+                            // alert(2);
+                        }
+                    }
+                </script>
+               <div class="chu_de">
+                <div class="top_chude container-fluid text-left" id="vitri_hienthi"
+                    style="background-color: rgb(255, 138, 21);">
+                    <a class="ten_chu_de" href="javascript:void();" style="color: rgb(128, 0, 64);">Trao đổi kinh
+                        nghiệm</a>
+                </div>
+                <div class="body_chude" style="background-color: rgb(255, 255, 166);">
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div style="font-size: 20px;">
+                                            <a href="index.php?chucnang=view_traodoikinhnghiem&amp;op=viewtraodoikinhnghiem&amp;traodoikinhnghiemcode=493&amp;p=1&amp;truong=3&amp;monhoc=0&amp;ht=5">
+                                                <b>Cần làm gì để chăm sóc, giáo dục trẻ mầm
+                                                        non, trong thời gian trẻ nghỉ học ở nhà để phòng, chống dịch
+                                                        bệnh Covid-19</b>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <font>Đã hơn hai tháng qua, sau thời gian nghỉ Tết Nguyên Đán, lại gặp
+                                                phải dịch bệnh Covid-19, nên trẻ phải ở nhà thời gian khá dài để
+                                                phòng, chống dịch. Sau đây xin giới thiệu một số biện pháp giúp cha
+                                                mẹ trẻ chăm sóc trẻ, trong thời gian trẻ tiếp tục nghỉ học ở nhà.
+                                            </font>
+                                        </div>
+                                    </td>
+                                    <td width="15%" class="text-center">
+                                        <font>Người đăng
+                                            <br>20/10/2020
+                                            </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="font-size: 20px;">
+                                            <a
+                                                href="index.php?chucnang=view_traodoikinhnghiem&amp;op=viewtraodoikinhnghiem&amp;traodoikinhnghiemcode=492&amp;p=1&amp;truong=3&amp;monhoc=0&amp;ht=5">
+                                             <b>Đảm bảo an toàn, phòng tránh tai nạn
+                                                        thương tích, đuối nước cho trẻ mầm non trong thời gian nghỉ
+                                                        học phòng chống dịch bệnh Covid-19</b>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <font>Trẻ em lứa tuổi mầm non là giai đoạn phát triển nhanh, mạnh mẽ về
+                                                thể chất, tình cảm xã hội và nhận thức; trẻ rất hiếu động, luôn tò
+                                                mò tìm hiểu, khám phá môi trường xung quanh cuộc sống thường ngày.
+                                                Vì vậy, tôi muốn chia sẻ một số lưu ý khi phụ huynh tổ chức chăm
+                                                sóc, các hoạt động vui chơi, giáo dục đối với trẻ; luôn đảm bảo an
+                                                toàn, phòng tránh tai nạn thương tích, đuối nước, để giúp trẻ phát
+                                                triển thể chất và tinh thần bình thường.</font>
+                                        </div>
+                                    </td>
+                                    <td width="15%" class="text-center">
+                                        <font>Người đăng
+                                            <br>30/9/2020
+                                            </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="font-size: 20px;">
+                                            <a
+                                                href="index.php?chucnang=view_traodoikinhnghiem&amp;op=viewtraodoikinhnghiem&amp;traodoikinhnghiemcode=491&amp;p=1&amp;truong=3&amp;monhoc=0&amp;ht=5">
+                                                <b>Giáo dục kỹ năng sống cho trẻ mầm non
+                                                        trong thời gian nghỉ học ở nhà phòng, chống dịch
+                                                        Covid-19</b>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <font>Giáo dục Kỹ năng sống phù hợp với lứa tuổi, giúp trẻ em biết kính
+                                                trọng, yêu mến, lễ phép với ông bà, cha mẹ, thầy cô giáo, anh chị
+                                                em, bạn bè; thật thà, mạnh dạn, tự tin, chia sẻ; yêu thiên nhiên,
+                                                thích cái đẹp, ham hiểu biết, thích học hỏi là yêu cầu thường xuyên,
+                                                liên tục, mọi lúc, mọi nơi.</font>
+                                        </div>
+                                    </td>
+                                    <td width="15%" class="text-center">
+                                        <font>Ngày đăng
+                                            <br>15/4/2020
+                                            </font>
+                                    </td>
+                                </tr>
+                              
+                            </tbody>
+                        </table>
+                    </div>
+                  
+
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!--/.container-->
+</article>

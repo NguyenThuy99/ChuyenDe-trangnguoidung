@@ -70,35 +70,39 @@ margin-bottom: 50px;">
                 </script>
                 <div class="chu_de">
                     <div class="top_chude container-fluid text-left" id="vitri_hienthi"
-                    style="background-color: rgb(255, 138, 21); height: 43px;">
-                    <a class="ten_chu_de" href="javascript:void();" style="color: rgb(128, 0, 64);">Thời khóa biểu</a>
-                  </div>
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-hover">
-                            <thead>
-                                <tr>
-                                    <th>STT</th>
-                                    <th>Tiêu đề thời khóa biểu</th>
-                                    
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr *ngFor="let tk of tkb">
-                                    <td class="text-center">
-                                         <p style="font-size:15px;">1</p> 
-                                    </td>
-                                    <td>
-                                       <a [routerLink]="['/chitiettkb',tk.id]"
-                                            ><b>
-                                                <p style="font-family:Times New Roman;font-size:15px;color:#0093DD">
-                                                    {{tk.ten}}</p>
-                                            </b></a> 
-                                    </td>
-                                   
-                                </tr>
+                        style="background-color: rgb(255, 138, 21); height: 43px;">
+                        <a class="ten_chu_de" href="index.php?chucnang=view_chude&amp;chudecode=50"
+                            style="color: rgb(128, 0, 64);">Xem thời khóa biểu</a>
+                    </div>
+                    <div class="body_chude" style="background-color: rgb(255, 255, 166);">
 
-                            </tbody>
-                        </table>
+                        <form enctype="multipart/form-data" action="index.php?chucnang=view_thoikhoabieuhocsinh"
+                            method="POST">
+                            <input type="hidden" name="ht" value="5">
+                            <input type="hidden" name="p" value="1">
+                            <input type="hidden" name="op" value="thoikhoabieu_hocsinh">
+                            <div class="row">
+                                
+                            </div>
+                            <div  class="" >
+                                <div class="col-xs-12 text-left">
+                                    Tiêu đề thời khóa biểu :{{cttkb.ten}}
+                                </div>
+                                
+                                <div class="col-xs-12 text-left">
+                                    Nội dung chi tiêt
+                                </div>
+                                <div class="col-xs-12 text-center">
+                                    <p><img alt=""
+                                            src="{{cttkb.hinhanh}}"
+                                            style="height:600px; width:777px"></p>
+
+                                
+                                </div>
+
+                            </div>
+                          
+                        </form>
                     </div>
                 </div>
 

@@ -10,6 +10,8 @@ import { BaseComponent } from 'src/app/lib/base.component';
 })
 export class HoatdongComponent extends BaseComponent implements OnInit {
   quangcao: any;
+  loaiqc: any;
+  loaichude:any;
   constructor(injector: Injector, private _sanitizer: DomSanitizer) {
     super(injector);
   }
@@ -28,6 +30,22 @@ export class HoatdongComponent extends BaseComponent implements OnInit {
       setTimeout(() => {
         this.loadScripts();
       });
-    }, err => { });
+    }, err => { })
+    Observable.combineLatest(
+      this._api.get('api/loaiquangcao/get-all-loaiquangcao'),).takeUntil(this.unsubscribe).subscribe(
+      res => {
+        this.loaiqc = res[0];
+        console.log(this.loaiqc);
+      }, err => { })
+      Observable.combineLatest(
+        this._api.get('api/loaichude/get-all-loaichude'),
+      ).takeUntil(this.unsubscribe).subscribe(res => {
+        this.loaichude = res[0];
+        setTimeout(() => {
+          this.loadScripts();
+        });
+      }, err => { });
+  
+    }
+  
   }
-}

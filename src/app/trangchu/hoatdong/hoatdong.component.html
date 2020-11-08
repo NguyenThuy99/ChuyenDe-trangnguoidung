@@ -5,63 +5,54 @@ margin-bottom: 50px;">
 		<div class="row">
 			<div class="col-sm-3 col-md-push-9" style="margin-top: -34px">
 				<div class="row khoi_phai">
-					<nav class="navbar navbar-collapse navbar-default">
-						<div class="navbar-header pull-right">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-								data-target="#navbar1" aria-expanded="true" aria-controls="navbar">
-
-							</button>
+				  <nav class="navbar navbar-collapse navbar-default">
+					<div class="navbar-header pull-right">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1"
+						aria-expanded="true" aria-controls="navbar">
+		
+					  </button>
+					</div>
+					<div class="clearfix visible-xs"></div>
+					<div id="navbar1" class="collapse navbar-collapse navbar-default navbar-right collapse show">
+					  <div class="list-group chu_de">
+						<div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
+						  <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Văn bản hành chính</p>
+						</div >
+						<div class="" *ngFor="let lcd of loaichude">
+						<a [routerLink]="['/congvan']" class="list-group-item"
+						  style="background-color: rgb(255, 255, 255);">{{lcd.tenchude}}</a>
 						</div>
-						<div class="clearfix visible-xs"></div>
-						<div id="navbar1" class="collapse navbar-collapse navbar-default navbar-right collapse show">
-							<div class="list-group chu_de">
-								<div class="container-fluid text-center top_chude"
-									style="background-color: rgb(255, 138, 21);">
-									<p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Văn bản hành chính</p>
-								</div><a href="index.php?chucnang=view_lichcongtac" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Lịch công tác</a><a
-									href="index.php?chucnang=view_vanbanphapquy" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Văn bản pháp quy</a><a
-									href="index.php?chucnang=view_congvanchidao" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Công văn chỉ đạo</a><a
-									href="index.php?chucnang=view_giaymoi" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Giấy mời</a><a
-									href="index.php?chucnang=view_thongtin3congkhai" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Thông tin 3 công khai</a>
-							</div>
-							<div class="list-group chu_de">
-								<div class="container-fluid text-center top_chude"
-									style="background-color: rgb(255, 138, 21);">
-									<p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Chia sẻ - trao đổi</p>
-								</div><a href="index.php?chucnang=view_baigiangdientu" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Bài giảng điện tử</a><a
-									href="index.php?chucnang=view_traodoikinhnghiem" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Trao đổi kinh nghiệm</a><a
-									href="index.php?chucnang=view_traodoitructuyen" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Trao đổi trực tuyên</a>
-							</div>
-							<div class="list-group chu_de">
-								<div class="container-fluid text-center top_chude"
-									style="background-color: rgb(255, 138, 21);">
-									<p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Nhà trường - phụ huynh</p>
-								</div><a href="index.php?chucnang=view_thucdon" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Thực đơn của bé</a><a
-									href="index.php?chucnang=view_hoidap" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Hỏi đáp</a><a
-									href="index.php?chucnang=view_tiepthu_ykien" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Ý kiến đóng góp</a><a
-									href="index.php?chucnang=view_tracuudiemhocsinh" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Tra cứu điểm học sinh</a><a
-									href="index.php?chucnang=view_thoikhoabieuhocsinh" class="list-group-item"
-									style="background-color: rgb(255, 255, 255);">Thời khóa biểu học sinh</a>
-							</div>
-
-
-						</div>
-					</nav>
+					  </div>
+					  <div class="list-group chu_de">
+						<div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
+						  <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Chia sẻ - trao đổi</p>
+						</div><a href="index.php?chucnang=view_baigiangdientu" class="list-group-item"
+						  style="background-color: rgb(255, 255, 255);">Bài giảng điện tử</a>
+						  <a
+						  [routerLink]="['/kinhnghiem']"
+						   class="list-group-item"
+						  style="background-color: rgb(255, 255, 255);">Trao đổi kinh nghiệm</a>
+						  <a
+						  href="index.php?chucnang=view_traodoitructuyen" class="list-group-item"
+						  style="background-color: rgb(255, 255, 255);">Trao đổi trực tuyên</a>
+					  </div>
+					  <div class="list-group chu_de">
+						<div class="container-fluid text-center top_chude" style="background-color: rgb(255, 138, 21);">
+						  <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Nhà trường - phụ huynh</p>
+						</div><a [routerLink]="['/thucdon']"  class="list-group-item"
+						  style="background-color: rgb(255, 255, 255);">Thực đơn của bé</a>
+						 
+						<a
+						[routerLink]="['/tkb']" class="list-group-item"
+						  style="background-color: rgb(255, 255, 255);">Thời khóa biểu học sinh</a>
+					  </div>
+		
+		
+					</div>
+				  </nav>
 				</div>
-
-			</div>
+		
+			  </div>
 			<div class="col-sm-9 col-md-pull-3">
 				<script>
 					function caret(value) {
@@ -90,12 +81,20 @@ margin-bottom: 50px;">
 								<div class="col-sm-3">
 									<font face="Arial" size="2">Chọn chủ đề video</font>
 								</div>
-								<div class="col-sm-9">
+								<!-- <div class="col-sm-9">
 									<select size="1" name="ChuDe_DS" onchange="form.submit()">
 										<option value="0">Tất cả</option><option value="373">MV ''Vững tin Việt Nam'' tuyên truyền chống dịch Covid-19</option><option value="216">Kể chuyện cho bé nghe</option><option value="217">Bé yêu âm nhạc</option><option value="218">Bé yêu khoa học</option><option value="219">Bé làm quen chữ cái</option><option value="220">MONTESSORI</option><option value="343">Chăm sóc nuôi dưỡng</option><option value="9">Hoạt động của các bé</option><option value="10">Hoạt động các Ngày hội - ngày lễ - Sự kiện</option><option value="221">Cùng bé yêu sáng tạo</option><option value="212">MGL- Video hướng dẫn các con học tại nhà</option><option value="125">Tài năng nhí</option><option value="84">Tuyên truyền</option><option value="56">Kỹ năng sống</option><option value="11">Môi trường giáo dục lấy trẻ làm trung tâm</option><option value="213">MGN-Video hướng dẫn các con học tại nhà</option><option value="6">Giới thiệu về nhà trường</option><option value="7">Thư viện cộng đồng</option><option value="12">Hoạt động học</option><option value="214">MGB-Video hướng dẫn các bé học tại nhà</option><option value="8">Bồi dưỡng chuyên môn</option><option value="215">NT-Video hướng dẫn các con học tại nhà</option><option value="5">Hoạt động chào cờ</option>
 									</select>
 								</div>
-							
+							 -->
+							 <div class="form-group">
+								
+								<select formControlName="idqc" class="form-control">
+									<ng-container *ngFor="let c of loaiqc">
+										<option [value]="c.id">{{ c.tenquangcao }}</option>
+									</ng-container>
+								</select>
+							</div>
 							</div>
 							<div class="row padding-top">
 								<div class="col-sm-12">Có tất cả : <font style="font-family:Times New Roman;color:#ff0000;font-size:18px;">484</font> video
