@@ -12,6 +12,7 @@ export class HoatdongComponent extends BaseComponent implements OnInit {
   quangcao: any;
   loaiqc: any;
   loaichude:any;
+  // list_item:any;
   constructor(injector: Injector, private _sanitizer: DomSanitizer) {
     super(injector);
   }
@@ -21,7 +22,6 @@ export class HoatdongComponent extends BaseComponent implements OnInit {
       this._api.get('api/quangcao/get-all-quangcao'),
     ).takeUntil(this.unsubscribe).subscribe(res => {
       this.quangcao = res[0];
-
       this.quangcao.map((res: any) => {
         res.video = this._sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/" + res.video);
         return res;

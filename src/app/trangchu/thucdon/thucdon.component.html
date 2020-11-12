@@ -80,25 +80,25 @@ margin-bottom: 50px;">
           <div class="" style="padding-left: 20px;
                     /* margin-left: 5px; */
                     background-color: rgb(255, 255, 166);
-                    padding-top: 10px;" *ngFor="let td of thucdon">
-            <form enctype="multipart/form-data" action="" method="POST">
+                    padding-top: 10px;" >
+            <form enctype="multipart/form-data" action="" [formGroup]="formluachon" (ngSubmit)="xemTheoLuaChon(formluachon.value)">
               <div class="row">
                 <div class="col-xs-12 col-sm-4">
-                  <select size="1" name="tuan" onchange="form.submit()">
-                    <option value="1">{{td.tieude}}</option>
-                    <!-- <option value="2">Tuần 2</option>
-                    <option value="3">Tuần 3</option>
-                    <option value="4">Tuần 4</option>
-                    <option value="5">Tuần 5</option>                   -->
-                  </select>
-                  <select name="nam_batdau" onchange="form.submit()">                                       
+                  <select formConTrolName0="nam_batdau" (change)="chonNamHoc($event.target.value)"> 
+                    <option value="0" selected="">năm học</option>                                      
                     <option value="2015">2015-2016</option>
                     <option value="2016">2016-2017</option>
                     <option value="2017">2017-2018</option>
                     <option value="2018">2018-2019</option>
                     <option value="2019">2019-2020</option>
-                    <option value="2020" selected="">2020-2021</option>
+                    <option value="2020">2020-2021</option>
                   </select>
+                  <select size="1" formConTrolName="tuan" (change)="xemTheoLuaChon($event.target.value)">
+                    <option value="">Tuần</option>
+                    <option *ngFor="let td of thucdonbynamhoc" value="{{td.id}}">{{td.tieude}}</option>
+                    
+                  </select>
+                  
                 </div>
                 <div class="col-xs-12 col-sm-8">
                   Từ 02/11/2020 đến 08/11/2020
@@ -108,7 +108,8 @@ margin-bottom: 50px;">
             <div class="" >
               <div class="bai_viet_1">
                 <a>
-                  <img class="anh_title" src="{{td.hinhanh}}" alt="" title="" style="height: 500px; width: 800px;">
+                  <img class="anh_title" *ngIf="single_thucdon" src="{{single_thucdon.hinhanh}}" alt="" title="" style="height: 500px; width: 800px;">
+                  <img class="anh_title" *ngIf="!single_thucdon" src="{{thucdon[0].hinhanh}}" alt="" title="" style="height: 500px; width: 800px;">
                   <h4 class="tieu_de_bai_viet padding-top" style="margin: 0;
                                     padding: 0;
                                     font-size: 14px;
