@@ -13,16 +13,16 @@ margin-bottom: 50px;">
                             </button>
                         </div>
                         <div class="clearfix visible-xs"></div>
-
                         <div id="navbar1" class="collapse navbar-collapse navbar-default navbar-right collapse show">
                             <div class="list-group chu_de">
                                 <div class="container-fluid text-center top_chude"
                                     style="background-color: rgb(255, 138, 21);">
                                     <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Văn bản hành chính</p>
-                                </div><div class="" *ngFor="let lcd of loaichude">
+                                </div>
+                                <div class="" *ngFor="let lcd of loaichude">
                                     <a [routerLink]="['/congvan']" class="list-group-item"
-                                      style="background-color: rgb(255, 255, 255);">{{lcd.tenchude}}</a>
-                                    </div>
+                                        style="background-color: rgb(255, 255, 255);">{{lcd.tenchude}}</a>
+                                </div>
                             </div>
                             <div class="list-group chu_de">
                                 <div class="container-fluid text-center top_chude"
@@ -49,7 +49,6 @@ margin-bottom: 50px;">
                             </div>
 
 
-
                         </div>
                     </nav>
                 </div>
@@ -71,39 +70,46 @@ margin-bottom: 50px;">
                 </script>
                 <div class="chu_de">
                     <div class="top_chude container-fluid text-left" id="vitri_hienthi"
-                        style="background-color: rgb(255, 138, 21); height: 43px;">
-                        <a class="ten_chu_de" href="index.php?chucnang=view_chude&amp;chudecode=50"
-                            style="color: rgb(128, 0, 64);">Xem thời khóa biểu</a>
+                        style="background-color: rgb(255, 138, 21); height: 44px;">
+                        <a class="ten_chu_de" href="javascript:void();" style="color: rgb(128, 0, 64);">Giới thiệu về
+                            trường</a>
                     </div>
                     <div class="body_chude" style="background-color: rgb(255, 255, 166);">
 
-                        <form enctype="multipart/form-data" action="index.php?chucnang=view_thoikhoabieuhocsinh"
-                            method="POST">
-                            <input type="hidden" name="ht" value="5">
-                            <input type="hidden" name="p" value="1">
-                            <input type="hidden" name="op" value="thoikhoabieu_hocsinh">
-                            <div class="row">
-                                
+                        <div class="fix-width-table" style="margin-left: 25px;">
+                            <p><span style="font-size:medium"><span style="color:#ff0000"><strong><span
+                                                style="font-family:Tahoma ;font-size: 20px;">Hoạt động của các
+                                                bé</span></strong></span></span> <span
+                                    style="color:#0f5ba1; font-family:Tahoma; font-size:10pt">&nbsp;</span></p>
+                            <p style="text-align:justify">Thứ 5 ngày 17/9/2020</p>
+                            <div class="col-md-12 mb-5 mb-md-0">
+                                <img src="assets/images/th1.jpg" alt="Image" class="img-fluid"
+                                    style="width: 700px;max-width: 100%;height: auto;">
                             </div>
-                            <div  class="" >
-                                <div class="col-xs-12 text-left">
-                                    Tiêu đề thời khóa biểu :{{cttkb.ten}}
-                                </div>
-                                
-                                <div class="col-xs-12 text-left">
-                                    Nội dung chi tiêt
-                                </div>
-                                <div class="col-xs-12 text-center">
-                                    <p><img alt=""
-                                            src="{{cttkb.hinhanh}}"
-                                            style="height:600px; width:777px"></p>
-
-                                
-                                </div>
-
+                           
+                            <p style="text-align:justify">Thứ 5 ngày 20/9/2020</p>
+                            <div class="col-md-12 mb-5 mb-md-0">
+                                <img src="assets/images/17.jpg" alt="Image" class="img-fluid"
+                                    style="width: 700px; max-width: 100%;height: auto;">
                             </div>
                           
-                        </form>
+                            <p style="text-align:justify">Thứ 5 ngày 1/10/2020</p>
+                            <div class="col-md-12 mb-5 mb-md-0">
+                                <img src="assets/images/4.jpg" alt="Image" class="img-fluid"
+                                    style="width: 700px;max-width: 100%;height: auto;">
+                            </div>
+                            <p style="text-align:justify">Thứ 5 ngày 3/10/2020</p>
+                            <div class="col-md-12 mb-5 mb-md-0">
+                                <img src="assets/images/16.jpg" alt="Image" class="img-fluid"
+                                    style="width: 700px;max-width: 100%;height: auto;">
+                            </div>
+                           
+                            <p style="text-align:justify">Thứ 5 ngày 15/10/2020</p>
+                            <div class="col-md-12 mb-5 mb-md-0">
+                                <img src="assets/images/33.png" alt="Image" class="img-fluid"
+                                    style="width: 700px;max-width: 100%;height: auto;">
+                            </div>
+                        </div>
                     </div>
                 </div>
 

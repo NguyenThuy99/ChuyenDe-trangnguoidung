@@ -19,6 +19,7 @@ import { ChitietchudeComponent } from './chitietchude/chitietchude.component';
 import { TkbComponent } from './tkb/tkb.component';
 import { KinhnghiemComponent } from './kinhnghiem/kinhnghiem.component';
 import { ChitiettkbComponent } from './chitiettkb/chitiettkb.component';
+import { ThuvienanhComponent } from './thuvienanh/thuvienanh.component';
 
 export const trangchuRoutes :Routes = [
   {path: '', component: TrangchuComponent,
@@ -66,13 +67,15 @@ export const trangchuRoutes :Routes = [
     },
     {
       path: 'chitiettkb/:id', component: ChitiettkbComponent
+    },{
+      path: 'thuvienanh', component: ThuvienanhComponent
     }
   ]
 }
 ];
 
 @NgModule({
-  declarations: [TrangchuComponent, MenuComponent, FooterComponent, HomeComponent, GioithieuComponent, CocautochucComponent, CongvanComponent, TintucComponent, ThucdonComponent, LienheComponent, QuanlyComponent, ChitiettintucComponent,HoatdongComponent, ChudeComponent, ChitietchudeComponent, TkbComponent, ChitiettkbComponent],
+  declarations: [TrangchuComponent, MenuComponent, FooterComponent, HomeComponent, GioithieuComponent, CocautochucComponent, CongvanComponent, TintucComponent, ThucdonComponent, LienheComponent, QuanlyComponent, ChitiettintucComponent,HoatdongComponent, ChudeComponent, ChitietchudeComponent, TkbComponent, ChitiettkbComponent, ThuvienanhComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(trangchuRoutes)

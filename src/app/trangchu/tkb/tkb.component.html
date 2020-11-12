@@ -19,11 +19,10 @@ margin-bottom: 50px;">
                                 <div class="container-fluid text-center top_chude"
                                     style="background-color: rgb(255, 138, 21);">
                                     <p class="ten_top_sidebar" style="color: rgb(202, 0, 0);">Văn bản hành chính</p>
-                                </div>
-                                <div class="" *ngFor="let lcd of loaichude">
+                                </div><div class="" *ngFor="let lcd of loaichude">
                                     <a [routerLink]="['/congvan']" class="list-group-item"
-                                        style="background-color: rgb(255, 255, 255);">{{lcd.tenchude}}</a>
-                                </div>
+                                      style="background-color: rgb(255, 255, 255);">{{lcd.tenchude}}</a>
+                                    </div>
                             </div>
                             <div class="list-group chu_de">
                                 <div class="container-fluid text-center top_chude"
@@ -44,9 +43,11 @@ margin-bottom: 50px;">
                                     style="background-color: rgb(255, 255, 255);">Thực đơn của bé</a>
 
                                 <a [routerLink]="['/tkb']" class="list-group-item"
-                                    style="background-color: rgb(255, 255, 255);">Thời
-                                    khóa biểu học sinh</a>
+                                    style="background-color: rgb(255, 255, 255);">Thời khóa biểu học sinh</a>
+                                    <a [routerLink]="['/thuvienanh']" class="list-group-item"
+                                    style="background-color: rgb(255, 255, 255);">Thư viện ảnh</a>
                             </div>
+
 
 
                         </div>
